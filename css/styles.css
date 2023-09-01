@@ -238,16 +238,22 @@ margin: 0;}
 .section-one-button:focus {
         background-color: var(--ocean);
     }
-
 .section-two {
-    padding: 120px 0;
-}
+padding: 96px 16px;
+        }
+
+@media screen and (min-width: 1158px) {
+.section-two {
+padding: 120px 0;
+}}
 
  .logo-icon {
      display: flex;
      justify-content: center;
      align-items: center;
  }
+
+
 
  .logo-icon-wrapper {
      display: flex;
@@ -260,39 +266,62 @@ margin: 0;}
      border-radius: 4px;
      background: var(--cloud, #F4F4FD);
  }
-
-
+ @media screen and (max-width: 1158px) {
+    .logo-icon-wrapper {
+        display: none;
+    }
+ }
  /* <svg class="" width="" height="">
  <use href="/images/icons.svg#"></use>
  </svg> */
 
 
-    .section-two-title,
-    .titie-p
-     {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-         color: var(--navy-blue);
-        
-    }
-    .section-two-text {
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+.section-two-title,
+.titie-p {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--navy-blue);
+        }
+.section-two-text {
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
 
-    }
 .section-two-title {
     margin-bottom: 8px;
 }
 
-.section-two-list {
-    display: flex;
-    gap: 24px;
+@media screen and (max-width: 767.98px) {
+.section-two-list-element:not(:last-child) {
+    margin-bottom: 72px;
 }
+}
+
+@media screen  and (min-width: 768px) {
+.section-two-list {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap; 72px;}
+
+.section-two-list-element{
+width: calc((100% - 72px) / 2);
+}}
+
+
+@media screen  and (min-width: 1158px) { 
+
+.section-two-list {
+display: flex;
+gap: 24px;}
+
 .section-two-list-element{
 width: calc((100% - 72px) / 4);
-}
+}}
+
+
 
     .section-three-title,
     .section-four-title,
@@ -308,6 +337,13 @@ width: calc((100% - 72px) / 4);
     .section-three {
     padding-bottom: 120px;
     }
+
+@media screen and (max-width: 1158px) {
+.section-three {
+display: none;
+        }
+     }
+
     .section-three-title {
     margin-bottom: 72px;
     }
