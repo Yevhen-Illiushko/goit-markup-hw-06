@@ -304,7 +304,7 @@ letter-spacing: 0.02em;
 display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
-row-gap; 72px;}
+row-gap: 72px; }
 
 .section-two-list-element{
 width: calc((100% - 72px) / 2);
